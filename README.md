@@ -1,3 +1,3 @@
-# Audiencias Versio 2
+# Audiencias Version 2
 
-LA nueva versión de la APP de Audiencias, será SPA con AngularJS, Bootstrap y Firebase
+La nueva versión de la APP de Audiencias, será SPA con AngularJS, Bootstrap y Firebase
