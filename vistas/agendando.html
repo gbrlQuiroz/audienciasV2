@@ -6,20 +6,20 @@
     <title> AGENDAH </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../css/titulos.css">
 </head>
 
 <body>
     <div class="container">
-        <h2> Ingrese sus datos </h2>
+        <h4> Ingrese los siguientes datos </h4>
         <br>
         <br>
-
         <form role="form" class="form-horizontal">
-            <!--PARA EL REGISTRO DE LA SOLICITUD DEL SERVICIO   -->
-            <!--      PARA EL NUMERO DE INVENTARIO    -->
+
+            <!--PARA EL REGISTRO DE DATOS DEL VISITANTE   -->
+
             <div class="form-group has-feedback">
-                <label for="inventa" class="control-label col-md-3"> No. de Inventario:</label>
+                <label for="inventa" class="control-label col-md-3"> Nombre:</label>
                 <div class="col-md-6">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
@@ -30,9 +30,55 @@
             </div>
 
 
-            <!-- PARA EL USUARIO ASIGNADO -->
+            <!-- -->
+
             <div class="form-group has-feedback">
-                <label for="asignado" class="control-label col-md-3"> Usuario Asignado </label>
+                <label for="asignado" class="control-label col-md-3"> Dependencia </label>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" class="form-control" name="asignado" id="asignado" maxlength="50" placeholder="Anote el nombre completo" required="required" />
+                    </div>
+                    <span class="glyphicon form-control-feedback verif"></span>
+                </div>
+            </div>
+            <!-- -->
+
+            <div class="form-group has-feedback">
+                <label for="asignado" class="control-label col-md-3"> Puesto </label>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" class="form-control" name="asignado" id="asignado" maxlength="50" placeholder="Anote el nombre completo" required="required" />
+                    </div>
+                    <span class="glyphicon form-control-feedback verif"></span>
+                </div>
+            </div>
+            <!--  -->
+            <div class="form-group has-feedback">
+                <label for="asignado" class="control-label col-md-3"> Teléfono Local </label>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" class="form-control" name="asignado" id="asignado" maxlength="50" placeholder="Anote el nombre completo" required="required" />
+                    </div>
+                    <span class="glyphicon form-control-feedback verif"></span>
+                </div>
+            </div>
+            <!-- -->
+            <div class="form-group has-feedback">
+                <label for="asignado" class="control-label col-md-3"> Celular </label>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" class="form-control" name="asignado" id="asignado" maxlength="50" placeholder="Anote el nombre completo" required="required" />
+                    </div>
+                    <span class="glyphicon form-control-feedback verif"></span>
+                </div>
+            </div>
+            <!--  -->
+            <div class="form-group has-feedback">
+                <label for="asignado" class="control-label col-md-3"> Visita a: </label>
                 <div class="col-md-6">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -42,11 +88,20 @@
                 </div>
             </div>
 
+            <div class="col-lg-offset-3">
 
-            <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-            <script src="js/ui-bootstrap-tpls-1-1-2.min.js"></script>
+                <p><strong> Breve descripción del asunto a tratar: </strong></p>
+                <textarea class="mitextarea" rows="3" cols="78"></textarea>
+            </div>
+
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="js/ui-bootstrap-tpls-1-1-2.min.js"></script>
 </body>
 
 </html>
