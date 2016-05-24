@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> AGENDAH </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div class="container">
+        <h2> Ingrese sus datos </h2>
+        <br>
+        <br>
+
+        <form role="form" class="form-horizontal">
+            <!--PARA EL REGISTRO DE LA SOLICITUD DEL SERVICIO   -->
+            <!--      PARA EL NUMERO DE INVENTARIO    -->
+            <div class="form-group has-feedback">
+                <label for="inventa" class="control-label col-md-3"> No. de Inventario:</label>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                        <input type="text" class="form-control" name="inventa" id="inventa" maxlength="10" placeholder="XXXXXX" required="required" />
+                    </div>
+                    <span class="glyphicon form-control-feedback verif"></span>
+                </div>
+            </div>
+
+
+            <!-- PARA EL USUARIO ASIGNADO -->
+            <div class="form-group has-feedback">
+                <label for="asignado" class="control-label col-md-3"> Usuario Asignado </label>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" class="form-control" name="asignado" id="asignado" maxlength="50" placeholder="Anote el nombre completo" required="required" />
+                    </div>
+                    <span class="glyphicon form-control-feedback verif"></span>
+                </div>
+            </div>
+
+
+            <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+            <script src="js/ui-bootstrap-tpls-1-1-2.min.js"></script>
+</body>
+
+</html>
