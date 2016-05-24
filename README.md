@@ -1,4 +1,3 @@
-# EmpoDig-WEB
+# Audiencias Versio 2
 
-Platilla para la pagina web de Empoderamiento Digital
-faltan mchas cosas por hacer
+LA nueva versión de la APP de Audiencias, será SPA con AngularJS, Bootstrap y Firebase
