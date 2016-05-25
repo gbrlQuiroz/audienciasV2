@@ -1,5 +1,5 @@
  $(function () {
-     $('#practico').click(function () {
+     $('#audiencia').click(function () {
          var valido = true;
          $('input').each(function () {
              var grupo = $(this).parents('.form-group');
