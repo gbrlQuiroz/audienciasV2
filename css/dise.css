@@ -45,7 +45,14 @@ h2 {
 
 div.container1 {
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 80px;
+}
+
+div.container2 {
+    margin-top: 20px;
+    margin-bottom: 50px;
     margin-right: 100px;
     margin-left: 80px;
 }
