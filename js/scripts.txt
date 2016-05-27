@@ -1,1 +1,0 @@
-aqui van todos los javaScript, todo lo que tenga extension js ira aqui.
