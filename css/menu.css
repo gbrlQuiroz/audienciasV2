@@ -1,46 +1,45 @@
-#navbar-menu.navbar-default .navbar-brand {
-    color: rgba(119, 119, 119, 1);
-}
-
-#navbar-menu.navbar-default {
-    font-size: 14px;
-    background-color: rgba(248, 248, 248, 1);
-    border-width: 1px;
-    border-radius: 4px;
-}
-
-#navbar-menu.navbar-default .navbar-nav>li>a {
-    color: rgba(119, 119, 119, 1);
-    background-color: rgba(248, 248, 248, 0);
-}
-
-#navbar-menu.navbar-default .navbar-nav>li>a:hover,
-#navbar-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(51, 51, 51, 1);
-    background-color: rgba(248, 248, 248, 0);
-}
-
-#navbar-menu.navbar-default .navbar-nav>.active>a,
-#navbar-menu.navbar-default .navbar-nav>.active>a:hover,
-#navbar-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(85, 85, 85, 1);
-    background-color: rgba(231, 231, 231, 1);
-}
-
-#navbar-menu.navbar-default .navbar-toggle {
-    border-color: #ddd;
-}
-
-#navbar-menu.navbar-default .navbar-toggle:hover,
-#navbar-menu.navbar-default .navbar-toggle:focus {
-    background-color: #ddd;
-}
-
-#navbar-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #888;
-}
-
-#navbar-menu.navbar-default .navbar-toggle:hover .icon-bar,
-#navbar-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #888;
+.btn-sample { 
+  color: #ffffff; 
+  background-color: #E0387E; 
+  border-color: #E0387E; 
+} 
+ 
+.btn-sample:hover, 
+.btn-sample:focus, 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  color: #ffffff; 
+  background-color: #BA1C7B; 
+  border-color: #E0387E; 
+} 
+ 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  background-image: none; 
+} 
+ 
+.btn-sample.disabled, 
+.btn-sample[disabled], 
+fieldset[disabled] .btn-sample, 
+.btn-sample.disabled:hover, 
+.btn-sample[disabled]:hover, 
+fieldset[disabled] .btn-sample:hover, 
+.btn-sample.disabled:focus, 
+.btn-sample[disabled]:focus, 
+fieldset[disabled] .btn-sample:focus, 
+.btn-sample.disabled:active, 
+.btn-sample[disabled]:active, 
+fieldset[disabled] .btn-sample:active, 
+.btn-sample.disabled.active, 
+.btn-sample[disabled].active, 
+fieldset[disabled] .btn-sample.active { 
+  background-color: #E0387E; 
+  border-color: #E0387E; 
+} 
+ 
+.btn-sample .badge { 
+  color: #E0387E; 
+  background-color: #ffffff; 
 }
