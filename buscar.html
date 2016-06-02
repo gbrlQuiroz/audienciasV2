@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Buscar </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/titulos.css">
+    <link rel="stylesheet" href="css/buscando.css">
+</head>
+
+<body>
+
+    <h3> Busqueda Global </h3>
+    <br>
+    <br>
+
+    <div ng-controller="meController">
+        <div class="table-responsive">
+            <div style="text-align:center;">
+                <table style="margin: 0 auto;">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Nombre</th>
+                            <th>Dependencia</th>
+                            <th>Teléfono</th>
+                            <th>Celular</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="data in datos">
+                            <td>{{data.fecha}}</td>
+                            <td>{{data.nombre}}</td>
+                            <td>{{data.dependencia}}</td>
+                            <td>{{data.telefono}}</td>
+                            <td>{{data.celular}}</td>
+                            <td>{{}}</td>
+                        </tr>
+                        <tr ng-repeat="data in datosResource">
+                            <td>{{data.fecha}}</td>
+                            <td>{{data.nombre}}</td>
+                            <td>{{data.dependencia}}</td>
+                            <td>{{data.telefono}}</td>
+                            <td>{{data.celular}}</td>
+                            <td>{{}}</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="../js/controladores/buscar.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="js/ui-bootstrap-tpls-1-1-2.min.js"></script>
+    <script src="../js/controladores/agendando.js"></script>
+</body>
+
+</html>
