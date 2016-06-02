@@ -10,8 +10,8 @@
 .btn-sample {
     color: #ffffff;
     font-size: 20px;
-    background-color: #E0387E;
-    border-color: #E0387E;
+    background-color: #FC5603;
+    border-color: #FC5603;
 }
 
 .btn-sample:hover,
@@ -20,8 +20,8 @@
 .btn-sample.active,
 .open .dropdown-toggle.btn-sample {
     color: #ffffff;
-    background-color: #BA1C7B;
-    border-color: #E0387E;
+    background-color: #F57739;
+    border-color: #FC5603;
 }
 
 .btn-sample:active,
