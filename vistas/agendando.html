@@ -25,189 +25,190 @@
         </div>
 
 
+        <div class="jumbotron" style="padding-bottom:20px;">
+
+            <h4><strong> Ingrese los siguientes datos </strong></h4>
+            <br>
+            <!--PARA EL REGISTRO DE DATOS DEL VISITANTE -->
+            <form role="form" class="form-horizontal">
+                <div class="form-group">
+                    <div class="has-feedback">
+                        <label class="control-label col-xs-3">Nombre:</label>
+                        <div class="col-xs-6">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="" required="required" />
+                            </div>
+                            <span class="glyphicon form-control-feedback verif"></span>
+                        </div>
+                    </div>
+                </div>
 
 
-        <h4><strong> Ingrese los siguientes datos </strong></h4>
-        <br>
-        <!--PARA EL REGISTRO DE DATOS DEL VISITANTE -->
-        <form role="form" class="form-horizontal">
-            <div class="form-group">
-                <div class="has-feedback">
-                    <label class="control-label col-xs-3">Nombre:</label>
+                <!-- -->
+
+                <div class="form-group has-feedback">
+                    <label for="dependencia" class="control-label col-xs-3">Dependencia:</label>
+                    <div class="col-xs-6">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                            <input type="text" class="form-control" name="dependencia" id="dependencia" placeholder="" required="required" />
+                        </div>
+                        <span class="glyphicon form-control-feedback verif"></span>
+                    </div>
+                </div>
+
+
+
+                <!--  -->
+
+                <div class="form-group has-feedback">
+                    <label for="puesto" class="control-label col-xs-3">Puesto:</label>
+                    <div class="col-xs-6">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="text" class="form-control" name="puesto" id="puesto" placeholder="" required="required" />
+                        </div>
+                        <span class="glyphicon form-control-feedback verif"></span>
+                    </div>
+                </div>
+
+                <!--  -->
+
+                <div class="form-group has-feedback">
+                    <label for="localidad" class="control-label col-xs-3">Localidad:</label>
+                    <div class="col-xs-6">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                            <input type="text" class="form-control" name="localidad" id="localidad" placeholder="" required="required" />
+                        </div>
+                        <span class="glyphicon form-control-feedback verif"></span>
+                    </div>
+                </div>
+
+                <!-- -->
+
+
+                <div class="form-group has-feedback">
+                    <label for="visita" class="control-label col-xs-3">Visita:</label>
                     <div class="col-xs-6">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="" required="required" />
+                            <select class="form-control">
+                                <option> Seleccione </option>
+                                <option> Secretaria </option>
+                                <option> Sec. Téc. </option>
+                            </select>
+                            <span class="glyphicon form-control-feedback verif"></span>
                         </div>
-                        <span class="glyphicon form-control-feedback verif"></span>
+
                     </div>
                 </div>
-            </div>
 
 
-            <!-- -->
-
-            <div class="form-group has-feedback">
-                <label for="dependencia" class="control-label col-xs-3">Dependencia:</label>
-                <div class="col-xs-6">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                        <input type="text" class="form-control" name="dependencia" id="dependencia" placeholder="" required="required" />
-                    </div>
-                    <span class="glyphicon form-control-feedback verif"></span>
-                </div>
-            </div>
-
-
-
-            <!--  -->
-
-            <div class="form-group has-feedback">
-                <label for="puesto" class="control-label col-xs-3">Puesto:</label>
-                <div class="col-xs-6">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                        <input type="text" class="form-control" name="puesto" id="puesto" placeholder="" required="required" />
-                    </div>
-                    <span class="glyphicon form-control-feedback verif"></span>
-                </div>
-            </div>
-
-            <!--  -->
-
-            <div class="form-group has-feedback">
-                <label for="localidad" class="control-label col-xs-3">Localidad:</label>
-                <div class="col-xs-6">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
-                        <input type="text" class="form-control" name="localidad" id="localidad" placeholder="" required="required" />
-                    </div>
-                    <span class="glyphicon form-control-feedback verif"></span>
-                </div>
-            </div>
-
-            <!-- -->
-
-
-            <div class="form-group has-feedback">
-                <label for="visita" class="control-label col-xs-3">Visita:</label>
-                <div class="col-xs-6">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <select class="form-control">
-                            <option> Seleccione </option>
-                            <option> Secretaria </option>
-                            <option> Sec. Téc. </option>
-                        </select>
-                        <span class="glyphicon form-control-feedback verif"></span>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!--  -->
-            <div class="form-group has-feedback">
-                <label for="tel" class="control-label col-xs-3">Teléfonos:</label>
-                <div class="col-xs-6">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
-                        <input type="text" class="form-control" name="tel" id="tel" placeholder="" required="required" />
-                    </div>
-                    <span class="glyphicon form-control-feedback verif"></span>
-                </div>
-            </div>
-
-            <!-- -->
-
-            <div class="form-group">
-                <label for="asunto" class="control-label col-xs-3">Asunto:</label>
-                <div class="col-xs-6">
-                    <textarea rows="2" class="form-control"></textarea>
-                </div>
-            </div>
-
-
-            <!--  -->
-
-            <div class="form-group has-feedback">
-                <label for="fecha" class="control-label col-xs-3">Fecha:</label>
-                <div class="col-xs-3">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                        <input type="date" class="form-control" name="fecha" id="fecha" placeholder="dd/mm/aaaa" required="required" />
-                    </div>
-                    <span class="glyphicon form-control-feedback verif"></span>
-                </div>
-
-
-                <div class="col-xs-2">
-                    <label class="control-label col-xs-3">Hora:</label>
-                    <div class="form-group has-feedback col-xs-9">
+                <!--  -->
+                <div class="form-group has-feedback">
+                    <label for="tel" class="control-label col-xs-3">Teléfonos:</label>
+                    <div class="col-xs-6">
                         <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
-                            <input type="time" class="form-control" name="hora" id="hora" required="required" />
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
+                            <input type="text" class="form-control" name="tel" id="tel" placeholder="" required="required" />
                         </div>
                         <span class="glyphicon form-control-feedback verif"></span>
                     </div>
                 </div>
-            </div>
+
+                <!-- -->
+
+                <div class="form-group">
+                    <label for="asunto" class="control-label col-xs-3">Asunto:</label>
+                    <div class="col-xs-6">
+                        <textarea rows="2" class="form-control"></textarea>
+                    </div>
+                </div>
 
 
+                <!--  -->
 
-
-
-
-            <!--V A L I D A C I O N -->
-
-            <div class="form-group">
-                <button type="button" class="btn btn-success col-xs-4 col-xs-offset-4" id="agenda" name="agenda" data-toggle="modal" data-target=""> Guardar Datos</button>
-            </div>
-
-            <!-- Modal true -->
-
-            <div class="modal fade" id="modaltrue" role="dialog">
-                <div class="modal-dialog">
-
-                    <!-- Modal content-->
-
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h2> Exito! </h2>
+                <div class="form-group has-feedback">
+                    <label for="fecha" class="control-label col-xs-3">Fecha:</label>
+                    <div class="col-xs-3">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                            <input type="date" class="form-control" name="fecha" id="fecha" placeholder="dd/mm/aaaa" required="required" />
                         </div>
-                        <div class="modal-body">
-                            <p>¡Capturaste correctamente los datos!</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"> Cerrar</button>
+                        <span class="glyphicon form-control-feedback verif"></span>
+                    </div>
+
+
+                    <div class="col-xs-2">
+                        <label class="control-label col-xs-3">Hora:</label>
+                        <div class="form-group has-feedback col-xs-9">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                                <input type="time" class="form-control" name="hora" id="hora" required="required" />
+                            </div>
+                            <span class="glyphicon form-control-feedback verif"></span>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Modal false -->
 
-            <div class="modal fade" id="modalfalse" role="dialog">
-                <div class="modal-dialog id=tamaño">
 
-                    <!-- Modal content-->
 
-                    <div class="modal-content">
-                        <div class="modal-header1">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h2> Error! </h2>
-                            <!--  <div class="alert alert-success hidden" id="success-alert"></div>-->
-                        </div>
-                        <div class="modal-body1">
-                            <p><strong> ¡Ojo: </strong> Capture correctamente sus datos!!</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"> Cerrar</button>
-                        </div>
+
+
+                <!--V A L I D A C I O N -->
+
+                <div class="form-group">
+                    <button type="button" class="btn btn-success col-xs-4 col-xs-offset-4" id="agenda" name="agenda" data-toggle="modal" data-target=""> Guardar Datos</button>
+                </div>
+        </div>
+
+        <!-- Modal true -->
+
+        <div class="modal fade" id="modaltrue" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2> Exito! </h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>¡Capturaste correctamente los datos!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"> Cerrar</button>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Modal false -->
+
+        <div class="modal fade" id="modalfalse" role="dialog">
+            <div class="modal-dialog id=tamaño">
+
+                <!-- Modal content-->
+
+                <div class="modal-content">
+                    <div class="modal-header1">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2> Error! </h2>
+                        <!--  <div class="alert alert-success hidden" id="success-alert"></div>-->
+                    </div>
+                    <div class="modal-body1">
+                        <p><strong> ¡Ojo: </strong> Capture correctamente sus datos!!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"> Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         </form>
