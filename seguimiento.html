@@ -95,28 +95,24 @@
 
             <!--  -->
             <div class="form-group has-feedback">
-                <label for="local" class="control-label col-xs-3">Teléfono:</label>
-                <div class="col-xs-3">
+                <label for="tel" class="control-label col-xs-3">Teléfonos:</label>
+                <div class="col-xs-6">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
-                        <input type="tel" class="form-control" name="local" id="local" maxlength="13" placeholder="Local" required="required" />
+                        <input type="text" class="form-control" name="tel" id="tel" maxlength="13" placeholder="" required="required" />
                     </div>
                     <span class="glyphicon form-control-feedback verif"></span>
                 </div>
-
-
-                <div class="col-xs-3">
-                    <label class="control-label col-xs-3">Celular</label>
-                    <div class="form-group has-feedback col-xs-10">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-                            <input type="tel" class="form-control" name="cel" id="cel" maxlength="13" placeholder="Celular" required="required" />
-                        </div>
-                        <span class="glyphicon form-control-feedback verif"></span>
-                    </div>
-                </div>
             </div>
 
+            <!-- -->
+
+            <div class="form-group">
+                <label for="asunto" class="control-label col-xs-3">Asunto:</label>
+                <div class="col-xs-6">
+                    <textarea rows="2" class="form-control"></textarea>
+                </div>
+            </div>
 
             <!--  -->
 
@@ -143,14 +139,7 @@
                 </div>
             </div>
 
-            <!-- -->
 
-            <div class="form-group">
-                <label for="asunto" class="control-label col-xs-3">Asunto:</label>
-                <div class="col-xs-6">
-                    <textarea rows="2" class="form-control"></textarea>
-                </div>
-            </div>
 
             <!-- -->
 
@@ -158,7 +147,7 @@
                 <label for="visita" class="control-label col-xs-3">Estatus:</label>
                 <div class="col-xs-6">
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-tags"></i></span>
                         <select class="form-control">
                             <option> Seleccione </option>
                             <option> Atendido </option>
