@@ -4,29 +4,29 @@
     app.factory('RESTful', ['$http', function ($http) {
         var response = {};
         response.getDatos = function () {
-            return $http.get('api/datos');
+            return $http.get('api/datitos');
         };
-        response.postDatos = function (datos) {
-            return $http.post('api/datos', datos);
+        response.postDatos = function (datitos) {
+            return $http.post('api/datitos', datitos);
         };
         response.getDato = function (id) {
-            var uri = 'api/datos/' + id;
+            var uri = 'api/datitos/' + id;
             return $http.get(uri);
         };
-        response.putDato = function (id, datos) {
-            var uri = 'api/datos/' + id;
-            return $http.put(uri, datos);
+        response.putDato = function (id, datitos) {
+            var uri = 'api/datitos/' + id;
+            return $http.put(uri, datitos);
             //return $http.put(id,datos);
         };
         response.getRaro = function () {
-            return $http.get('js/datos.json');
+            return $http.get('js/controladores/datitos.json');
         };
         return response;
         }]);
 
 
 
-    app.controller('meController', ['$scope', 'RESTful', function ($scope, RESTful) {
+    app.controller('mioControl', ['$scope', 'RESTful', function ($scope, RESTful) {
 
         /*+++++++++++++++++++++++
          * 

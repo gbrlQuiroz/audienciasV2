@@ -17,7 +17,7 @@
     <br>
     <br>
 
-    <div ng-controller="meController">
+    <div ng-controller="mioControl">
         <div class="table-responsive">
             <div style="text-align:center;">
                 <table style="margin: 0 auto;">
@@ -27,26 +27,20 @@
                             <th>Nombre</th>
                             <th>Dependencia</th>
                             <th>Teléfono</th>
-                            <th>Celular</th>
-                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="data in datos">
+                        <tr ng-repeat="data in datitos">
                             <td>{{data.fecha}}</td>
                             <td>{{data.nombre}}</td>
                             <td>{{data.dependencia}}</td>
                             <td>{{data.telefono}}</td>
-                            <td>{{data.celular}}</td>
-                            <td>{{}}</td>
                         </tr>
                         <tr ng-repeat="data in datosResource">
                             <td>{{data.fecha}}</td>
                             <td>{{data.nombre}}</td>
                             <td>{{data.dependencia}}</td>
                             <td>{{data.telefono}}</td>
-                            <td>{{data.celular}}</td>
-                            <td>{{}}</td>
                         </tr>
                     </tbody>
 
@@ -59,12 +53,13 @@
 
 
 
-    <script src="../js/controladores/buscar.js"></script>
+
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="js/ui-bootstrap-tpls-1-1-2.min.js"></script>
-    <script src="../js/controladores/agendando.js"></script>
+    <script src="js/controladores/datitos.json"></script>
+
 </body>
 
 </html>
