@@ -1,3 +1,12 @@
+.panel-body {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
 table,
 th {
     border: 1px solid grey;

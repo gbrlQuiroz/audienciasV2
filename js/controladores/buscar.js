@@ -1,44 +1,20 @@
-(function () {
-    var app = angular.module('buscar', []);
+$(document).ready(function () {
 
-    app.factory('RESTful', ['$http', function ($http) {
-        var response = {};
-        response.getDatos = function () {
-            return $http.get('api/datitos');
-        };
-        response.postDatos = function (datitos) {
-            return $http.post('api/datitos', datitos);
-        };
-        response.getDato = function (id) {
-            var uri = 'api/datitos/' + id;
-            return $http.get(uri);
-        };
-        response.putDato = function (id, datitos) {
-            var uri = 'api/datitos/' + id;
-            return $http.put(uri, datitos);
-            //return $http.put(id,datos);
-        };
-        response.getRaro = function () {
-            return $http.get('js/controladores/datitos.json');
-        };
-        return response;
-        }]);
+    $('.btn-filter').on('click', function () {
+        var $target = $(this).data('target');
+        if ($target != 'all') {
+            $('tbody tr').css('display', 'none');
+            $('tbody tr[data-status="' + $target + '"]').fadeIn('slow');
+        } else {
+            $('tbody tr').css('display', 'none').fadeIn('slow');
+        }
+    });
 
+    $('a').tooltip();
 
+    // jquery dropdown
+    $(document).ready(function () {
+        $(".js-example-basic-single").select2();
+    });
 
-    app.controller('mioControl', ['$scope', 'RESTful', function ($scope, RESTful) {
-
-        /*+++++++++++++++++++++++
-         * 
-         ++++++++++++++++++++++*/
-        cargarRaro();
-
-        function cargarRaro() {
-            RESTful.getRaro()
-                .success(function (datosCargados) {
-                    console.log('------' + datosCargados);
-                    $scope.datos = datosCargados;
-                });
-        };
-    }]);
-})();
+});

@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="../css/titulos.css">
     <link rel="stylesheet" href="css/buscando.css">
+
 </head>
 
 <body>
 
     <div class="container">
         <div class="row">
-
             <section class="content">
-                <!--    <h1></h1>  --->
-                <div class="col-md-6 col-md-offset-3">
+                <!--<h1>Consultas</h1>-->
+                <div class="col-md-offset-3">
                     <!--    <div class="panel panel-default">-->
                     <div class="panel-body">
                         <div class="pull-right">
@@ -32,7 +32,6 @@
                         </div>
                     </div>
                 </div>
-
             </section>
         </div>
 
@@ -40,55 +39,125 @@
         <!--    <h3> </h3>
                 <br>
                 <br> -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel-body">
+                    <table id="mitabla" class="table table-bordered table-striped table-list">
+                        <!-- <table class="table table-bordered table-hover table-sortable" id="tab-logic">-->
+                        <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" id="ckeckall" />
+                                </th>
+                                <th class="text-center">Fecha</th>
+                                <th class="text-center">Nombre</th>
+                                <th class="text-center">Dependencia</th>
+                                <th class="text-center">Teléfono</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-center">Opción</th>
+                            </tr>
+                        </thead>
 
 
-        <!-- <div ng-controller="mioControl">-->
-        <div class="table-responsive">
-            <table class="table table-filter">
-                <tbody>
-                    <tr data-status="atendido">
-                        <td>
-                            <div class="ckbox">
-                                <input type="checkbox" id="checkbox1">
-                                <label for="checkbox1"></label>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="media"></div>
+                        <!-- <div ng-controller="mioControl">-->
 
-                            <th>Fecha</th>
-                            <th>Nombre</th>
-                            <th>Dependencia</th>
-                            <th>Teléfono</th>
+                        <!-- <div class="table-responsive">
+                            <table class="table table-filter">-->
+                        <tbody>
+                            <tr data-status="atendido">
+                                <td>
+                                    <div class="ckbox">
+                                        <input type="checkbox" id="checkbox1">
+                                        <label for="checkbox1"></label>
+                                    </div>
+                                </td>
+                                <td>{{data.fecha}}</td>
+                                <td>{{data.nombre}}</td>
+                                <td>{{data.dependencia}}</td>
+                                <td>{{data.telefono}}</td>
+                                <td><span class="label label-success">Atendido</span></td>
+                                <td align="center" class="text-left">
+                                    <a class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Edit"><em class="fa fa-pecil"></em></a>
+                                    <a class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Delete"><em class="fa fa-trash"></em></a>
+                                    <a class="btn btn-default" data-toggle="tooltip" data-placement="top" title="print"><em class="fa fa-print"></em></a>
+                                </td>
+                            </tr>
+                            <tr data-status="pendiente">
+                                <td>
+                                    <div class="ckbox">
+                                        <input type="checkbox" id="checkbox1">
+                                        <label for="checkbox1"></label>
+                                    </div>
+                                    <td>{{data.fecha}}</td>
+                                    <td>{{data.nombre}}</td>
+                                    <td>{{data.dependencia}}</td>
+                                    <td>{{data.telefono}}</td>
+                                    <td><span class="label label-warning">Pendiende</span></td>
+                                    <td align="center" class="text-left">
+                                        <a class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Edit"><em class="fa fa-pecil"></em></a>
+                                        <a class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Delete"><em class="fa fa-trash"></em></a>
+                                        <a class="btn btn-default" data-toggle="tooltip" data-placement="top" title="print"><em class="fa fa-print"></em></a>
+                                    </td>
+                            </tr>
+                            <tr data-status="citado">
+                                <td>
+                                    <div class="ckbox">
+                                        <input type="checkbox" id="checkbox1">
+                                        <label for="checkbox1"></label>
+                                    </div>
+                                    <td>{{data.fecha}}</td>
+                                    <td>{{data.nombre}}</td>
+                                    <td>{{data.dependencia}}</td>
+                                    <td>{{data.telefono}}</td>
+                                    <td><span class="label label-danger">Citado</span></td>
+                                    <td align="center" class="text-left">
+                                        <a class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Edit"><em class="fa fa-pecil"></em></a>
+                                        <a class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Delete"><em class="fa fa-trash"></em></a>
+                                        <a class="btn btn-default" data-toggle="tooltip" data-placement="top" title="print"><em class="fa fa-print"></em></a>
+                                    </td>
+                            </tr>
+                            <tr data-status="canalizado">
+                                <td>
+                                    <div class="ckbox">
+                                        <input type="checkbox" id="checkbox1">
+                                        <label for="checkbox1"></label>
+                                    </div>
+                                    <td>{{data.fecha}}</td>
+                                    <td>{{data.nombre}}</td>
+                                    <td>{{data.dependencia}}</td>
+                                    <td>{{data.telefono}}</td>
+                                    <td><span class="label label-default">Canalizado</span></td>
+                                    <td align="center" class="text-left">
+                                        <a class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Edit"><em class="fa fa-pecil"></em></a>
+                                        <a class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Delete"><em class="fa fa-trash"></em></a>
+                                        <a class="btn btn-default" data-toggle="tooltip" data-placement="top" title="print"><em class="fa fa-print"></em></a>
+                                    </td>
+                            </tr>
+                            <tr data-status="todos">
+                                <td>
+                                    <div class="ckbox">
+                                        <input type="checkbox" id="checkbox1">
+                                        <label for="checkbox1"></label>
+                                    </div>
+                                    <td>{{data.fecha}}</td>
+                                    <td>{{data.nombre}}</td>
+                                    <td>{{data.dependencia}}</td>
+                                    <td>{{data.telefono}}</td>
+                                    <td><span class="label label-info">Todos</span></td>
+                                    <td align="center" class="text-left">
+                                        <a class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Edit"><em class="fa fa-pecil"></em></a>
+                                        <a class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Delete"><em class="fa fa-trash"></em></a>
+                                        <a class="btn btn-default" data-toggle="tooltip" data-placement="top" title="print"><em class="fa fa-print"></em></a>
+                                    </td>
+                            </tr>
 
+                        </tbody>
 
-                            <tbody>
-
-
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" class="checkthis" />
-                                        </td>
-                                        <td>{{data.fecha}}</td>
-                                        <td>{{data.nombre}}</td>
-                                        <td>{{data.dependencia}}</td>
-                                        <td>{{data.telefono}}</td>
-                                    </tr>
-                                    <tr ng-repeat="data in datosResource">
-                                        <td>{{data.fecha}}</td>
-                                        <td>{{data.nombre}}</td>
-                                        <td>{{data.dependencia}}</td>
-                                        <td>{{data.telefono}}</td>
-                                    </tr>
-                                </tbody>
-            </table>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
-
-
-
-
 
 
 
@@ -96,7 +165,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="js/ui-bootstrap-tpls-1-1-2.min.js"></script>
-    <script src="js/controladores/datitos.json"></script>
+    <script src="js/controladores/buscar.js"></script>
 
 </body>
 
